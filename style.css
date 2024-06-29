@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+PL:wght@100..400&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root {
+    --Orange: #FFBA49;
+    --Green: #20A39E;
+    --Dark-purpel: #23001E;
+    --Gray: #A4A9AD;
+    --red: #EF5B5B;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--Green);
+    color: var(--Dark-purpel);
+    font-family: "Roboto Mono", monospace;
+
+}
+
+.game {
+    text-align: center;
+}
+
+.container {
+    width: 40vw;
+    height: 450px;
+    /* background-color: #23001E; */
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.center {
+    width: 400px;
+    height: 400px;
+    /* background-color: black; */
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.heading_1 {
+    font-size: 75px;
+}
+
+.heading_2 {
+    font-size: 6px;
+    width: 100%;
+    text-align: center;
+}
+
+.box {
+    width: 116px;
+    height: 116px;
+    background-color: var(--Orange);
+    border: none;
+    border-radius: 15px;
+    font-size: 80px;
+    font-weight: 500;
+    color: var(--red);
+    outline: 1px solid black;
+    /* box-shadow: 7px 7px 5px var(--Gray); */
+    text-shadow:
+        1px 1px 0 #000,
+        -1px 1px 0 #000,
+        -1px -1px 0 #000,
+        1px -1px 0 #000;
+}
+
+#reset-btn {
+    height: 45px;
+    width: 130px;
+    font-size: 16px;
+    color: var(--Orange);
+    border: none;
+    border-radius: 12px;
+    background-color: #23001E;
+}
+
+.winner {
+    font-size: 40px;
+    color: var(--Orange);
+    text-align: center;
+}
+
+.hide {
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+    .heading_1 {
+        font-size: 55px;
+    }
+    
+    
+    .heading_2 {
+        font-size: 6px;
+        text-align: center;
+    }
+    .container {
+        width: 90vw;
+        height: 500px;
+        /* background-color: pink; */
+        margin: auto;
+        display: flex;
+        align-items: center;
+    }
+
+    .center {
+        width: 90%;
+        height: 90%;
+        /* background-color: black; */
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+    }
+
+    .box {
+        width: 25%;
+        height: 25%;
+        background-color: var(--Orange);
+        border: none;
+        border-radius: 15px;
+        font-size: 80px;
+        font-weight: 500;
+        color: var(--red);
+        outline: 1px solid black;
+        /* box-shadow: 7px 7px 5px var(--Gray); */
+        text-shadow:
+            1px 1px 0 #000,
+            -1px 1px 0 #000,
+            -1px -1px 0 #000,
+            1px -1px 0 #000;
+    }
+
+
+}
+/* \end{code} */
